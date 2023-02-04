@@ -34,6 +34,7 @@ class HighScores {
         highest = 0;
       }
     }
+
     return topThree;
   }
 }
