@@ -25,7 +25,8 @@ void highScoresTests() {
 
 void top3Scores() {
   test('Personal top three from a list of scores', () {
-    final scores = HighScores(<int>[10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]);
+    final scores =
+        HighScores(<int>[10, 30, 90, 30, 100, 20, 10, 0, 30, 40, 40, 70, 70]);
     expect(scores.personalTopThree(), equals(<int>[100, 90, 70]));
   }, skip: true);
 
