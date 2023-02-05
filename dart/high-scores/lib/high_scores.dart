@@ -1,12 +1,8 @@
 class HighScores {
-  List<int>? scores;
   HighScores([this.scores]);
+  List<int>? scores;
 
-  List<int>? ores;
-
-  int latest() {
-    return scores!.last;
-  }
+  int latest() => scores!.last;
 
   int personalBest() {
     int highest = 0;
@@ -22,6 +18,7 @@ class HighScores {
     List<int> temScores = scores!;
     List<int> topThree = [];
     int highest = 0;
+
     for (int i = 0; i < 3; i++) {
       if (temScores.isNotEmpty) {
         temScores.forEach((element) {
